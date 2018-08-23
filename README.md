@@ -61,6 +61,16 @@ func main() {
 
 ## 三. 收集的仓库 
 
+####  1. [Go夜读群的总结分享](https://github.com/developer-learning/night-reading-go)    
+
+> 好多文章和仓库, 都是从这个群交流后收集的, 感谢分享, 感谢开源.
+  
+  
+#### 2. [系统设计技能树](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)    
+
+> 系统设计相关, 感觉是架构师, 系统工程师必备的技能树
+
+
 
 
 
