@@ -63,7 +63,7 @@ func main() {
 
 ### 1. 各种排序算法的时间复杂度
 
-![排序时间复杂度](./images/tlakA.png)
+![排序时间复杂度](./images/sorters.png)
 
 
 
