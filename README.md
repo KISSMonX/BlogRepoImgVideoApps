@@ -63,8 +63,23 @@ func main() {
 
 ### 1. 各种排序算法的时间复杂度
 
+---
+
 ![排序时间复杂度](./images/sorters.png)
 
+---
+
+### 2. TCP 状态转移图, 重点 TIME\_WAIT, CLOSE\_WAIT
+
+![TCP状态图](./images/TCPState.jpg)
+
+---
+
+### 3. TCP 三次握手, 四次挥手
+
+![TCP握手挥手](./images/TCPShakeBye.jpg)
+
+---
 
 
 ## 三. 收集的仓库 
