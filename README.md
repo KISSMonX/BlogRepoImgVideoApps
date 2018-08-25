@@ -203,8 +203,32 @@ func main() {
 > - Configuration via environment variables
 > - Extensions
 
+#### 10. [yulong-hids: 一款由 YSRC 开源的主机入侵检测系统](https://github.com/ysrc/yulong-hids)
+
+> - 实时监控、秒级响应
+> - 全局首次出现概念，可发现未知威胁
+> - 支持自定义规则，高扩展性
+> - 高级分析功能，可溯源
+> - 全局快速阻断（进程、文件）
+> - 威胁情报查询（可自定义接口）
+
+#### 11. [YApi 是一个可本地部署的、打通前后端及QA的、可视化的接口管理平台](https://github.com/YMFE/yapi)
+
+> ### 特性
+>
+> - 基于 Json5 和 Mockjs 定义接口返回数据的结构和文档，效率提升多倍
+> - 扁平化权限设计，即保证了大型企业级项目的管理，又保证了易用性
+> - 类似 postman 的接口调试
+> - 自动化测试, 支持对 Response 断言
+> - MockServer 除支持普通的随机 mock 外，还增加了 Mock 期望功能，根据设置的请求过滤规则，返回期望数据
+> - 支持 postman, har, swagger 数据导入
+> - 免费开源，内网部署，信息再也不怕泄露了
 
 ## 四. 收集的视频
+
+#### 1. [Go 夜读 goroutine 调度实现](https://www.youtube.com/watch?v=98pIzaOeD2k&t=5s)
+
+
 
 ## 五. 收集的工具软件
 
@@ -216,23 +240,3 @@ func main() {
 
 > 可以用来自己作图参考, 有些好看的图, 可以参考 demo 来做. 
 
-#### 3. [yulong-hids: 一款由 YSRC 开源的主机入侵检测系统](https://github.com/ysrc/yulong-hids)
-
-> - 实时监控、秒级响应
-> - 全局首次出现概念，可发现未知威胁
-> - 支持自定义规则，高扩展性
-> - 高级分析功能，可溯源
-> - 全局快速阻断（进程、文件）
-> - 威胁情报查询（可自定义接口）
-
-#### 4. [YApi 是一个可本地部署的、打通前后端及QA的、可视化的接口管理平台](https://github.com/YMFE/yapi)
-
-> ### 特性
->
-> - 基于 Json5 和 Mockjs 定义接口返回数据的结构和文档，效率提升多倍
-> - 扁平化权限设计，即保证了大型企业级项目的管理，又保证了易用性
-> - 类似 postman 的接口调试
-> - 自动化测试, 支持对 Response 断言
-> - MockServer 除支持普通的随机 mock 外，还增加了 Mock 期望功能，根据设置的请求过滤规则，返回期望数据
-> - 支持 postman, har, swagger 数据导入
-> - 免费开源，内网部署，信息再也不怕泄露了
