@@ -113,30 +113,18 @@ func main() {
 > Haunt是有赞内部使用的服务发现系统，文中会详细介绍一下该系统的设计与思考  
 > PaaS平台中的应用一般都有多个实例，实例故障重启透明化与负载均衡都与服务发现密切相关。通过服务发现机制，可以透明的对多个实例进行访问，并实现负载均衡。而且应用的某个实例随时都可能故障重启，这时就需要动态配置服务调用方的路由信息。服务发现就可以解决这个动态配置的问题，Haunt(Youzan服务发现系统)也应运而生。
 
-## 二. 收集的图片
+#### 15. [聊聊微服务的服务注册与发现](http://jm.taobao.org/2018/06/26/%E8%81%8A%E8%81%8A%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/)
 
-#### 1. 各种排序算法的时间复杂度
+> 聊起微服务的服务注册与发现，很多人立马就会脱口而出 zk、etcd、consul、eureka 这些组件，进而聊到 CAP 如何取舍，性能如何，高可用和容灾是怎么实现的。  
+> 在这之前，站在组件使用者的角度，我想先问这么几个问题:
+> - 注册的 IP 和端口怎么确定 ？  
+> - 实现服务治理还需要注册哪些信息 ？  
+> - 如何进行优雅的服务注册与服务下线 ？  
+> - 注册服务的健康检查是如何做的 ？  
+> - 当服务有节点退出或新的节点加入时，订阅者能不能及时收到通知 ?  
+> - 我能方便地查看某个应用发布和订阅了哪些服务，以及所订阅的服务有哪些节点吗 ？  
 
----
-
-![排序时间复杂度](./images/sorters.png)
-
----
-
-#### 2. TCP 状态转移图, 重点 TIME\_WAIT, CLOSE\_WAIT
-
-![TCP状态图](./images/TCPState.jpg)
-
----
-
-#### 3. TCP 三次握手, 四次挥手
-
-![TCP握手挥手](./images/TCPShakeBye.jpg)
-
----
-
-
-## 三. 收集的仓库 
+## 二. 收集的仓库 
 
 ####  1. [Go夜读群的总结分享](https://github.com/developer-learning/night-reading-go)    
 
@@ -232,7 +220,13 @@ func main() {
 > - 支持 postman, har, swagger 数据导入
 > - 免费开源，内网部署，信息再也不怕泄露了
 
-## 四. 收集的视频
+#### 12. [bigcache: Efficient cache for gigabytes of data written in Go](https://github.com/allegro/bigcache)
+
+> Fast, concurrent, evicting in-memory cache written to keep big number of entries without impact on performance. BigCache keeps entries on heap but omits GC for them. To achieve that operations on bytes arrays take place, therefore entries (de)serialization in front of the cache will be needed in most use cases.
+
+
+
+## 三. 收集的视频
 
 #### 1. [Go 夜读 goroutine 调度实现](https://www.youtube.com/watch?v=98pIzaOeD2k&t=5s)
 
@@ -244,7 +238,7 @@ func main() {
 
 
 
-## 五. 收集的工具软件
+## 四. 收集的工具软件
 
 #### 1. [Vertabelo](http://www.vertabelo.com/features)
 
@@ -254,4 +248,41 @@ func main() {
 
 > 可以用来自己作图参考, 有些好看的图, 可以参考 demo 来做. 
 
-## 
+##  五. 收集的博客站点
+
+#### 1. [CoolShell](http://coolshell.cn/)  
+
+> 20年软件开发相关工作经验，10年以上项目和团队管理经验。擅长底层技术架构，团队建设，软件工程，软件研发咨询，以及全球软件团队协作管理。对高性能，高可用性，分布式，高并发，以及大规模数据处理系统有一些经验和心得。喜欢关注底层技术平台和互联网行业应用。技术擅长C/C++/Java和Unix/Linux/Windows。曾于Amazon中国任研发经理，负责电子商务全球化业务（全球开店）和全球库存预测系统的研发。曾在阿里巴巴北京研发中心、商家业务部曾任资深专家一职，负责电商云平台、开放平台，云监控和电商多媒体平台。曾在阿里巴巴核心系统专家组从事阿里核心系统和阿里云ECS相关的虚拟化平台的开发工作。现在创业中，MegaEase创始人，致力于为企业的高并发高可用架构提供一整套的技术解决方案和产品。
+
+
+#### 2. [阿里中间件团队博客](http://jm.taobao.org/) 
+
+> 中间件团队致力于成为中国第一，世界一流的Java技术团队。自主研发的一系列产品始于07年底开始的淘宝架构2.0到3.0的变迁过程中，使淘宝网 从集中式的Java应用走向了分布式Java应用，涵盖了消息中间件、服务框架、数据层、应用服务器和大规模分布式稳定性平台等等。解决了淘宝网这个大型系统中的应用间以及应用到水平拆分后的数据库间的访问问题，通过消息中间件对应用进行了解耦并提供了最终一致性支持。目前广泛使用在大淘宝的各个Java应用中以及少部分的非Java应用中。而稳定性平台、性能优化平台是在淘宝系统分布式化后解决和稳定性、容量规划、降级管理、依赖告警以及性能丈量等方面的问题的利器。
+
+#### 3. [老赵点滴 - 追求编程之美](http://blog.zhaojie.me/)  
+
+> 赵劼，网名老赵，洋名Jeffrey Zhao，花名赵姐夫，金融行业程序员，目前就职于摩根大通（香港）。多年微软MVP，InfoQ中文站兼职编辑。虽然广泛涉猎各类技术，但早就被人民群众贴上“微软”标签，现已认命。  
+> 经过多年寻觅起伏，目前已打算潜心在金融行业发展。关注前沿技术，热爱开源。对函数式编程，并行程序开发，语言设计与实现，代码之美以及程序员能力与修养等相关问题也有着浓厚的兴趣，非常希望能够写程序到60岁。热爱生活，在技术之余也时常健身做饭弹钢琴，立志为彰显码农正面形象做出贡献。
+
+
+## 六. 收集的图片
+
+#### 1. 各种排序算法的时间复杂度
+
+---
+
+![排序时间复杂度](./images/sorters.png)
+
+---
+
+#### 2. TCP 状态转移图, 重点 TIME\_WAIT, CLOSE\_WAIT
+
+![TCP状态图](./images/TCPState.jpg)
+
+---
+
+#### 3. TCP 三次握手, 四次挥手
+
+![TCP握手挥手](./images/TCPShakeBye.jpg)
+
+---
