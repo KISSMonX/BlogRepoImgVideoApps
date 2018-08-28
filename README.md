@@ -2,7 +2,7 @@
 
 ## 一. 收集的文章
 
-#### 1. [日访问量百亿级的应用如何做缓存架构设计](https://blog.didiyun.com/index.php/2018/05/22/weibo-cache/)  
+#### 1. [日访问量百亿级的应用如何做缓存架构设计](https://blog.didiyun.com/index.php/2018/05/22/weibo-cache/)
 
 > 新浪微博技术专家陈波为大家讲解了**微博Cache架构的设计实践过程。**
 
@@ -10,15 +10,13 @@
 
 > 微服务大行其道，微服务安全也是非常热门的话题。本文向大家分享微服务系统中认证管理相关技术。其中包括用户认证、网关和 API 认证、系统间和系统内的认证，以及我们的统一认证管理系统 IAM。 
 
-#### 3. [10 分钟理解什么是 OAuth 2.0 协议](https://deepzz.com/post/what-is-oauth2-protocol.html)     
+#### 3. [10 分钟理解什么是 OAuth 2.0 协议](https://deepzz.com/post/what-is-oauth2-protocol.html)
 
 > OAuth 2.0 是一个行业的标准授权协议。OAuth 2.0 专注于简化客户端开发人员，同时为 Web 应用程序，桌面应用程序，手机和客厅设备提供特定的授权流程。
 >
 > 它的最终目的是为第三方应用颁发一个有时效性的令牌 token。使得第三方应用能够通过该令牌获取相关的资源。常见的场景就是：第三方登录。当你想要登录某个论坛，但没有账号，而这个论坛接入了如 QQ、Facebook 等登录功能，在你使用 QQ 登录的过程中就使用的 OAuth 2.0 协议。
 
-
-#### 4. [Go 空死循环导致的调度器无法调度](https://rakyll.org/scheduler/)     
-
+#### 4. [Go 空死循环导致的调度器无法调度](https://rakyll.org/scheduler/)
 
 ```golang
 
@@ -57,28 +55,22 @@ func main() {
 
 ```
 
-还可参考:   
-- [https://gocn.vip/question/2116](https://gocn.vip/question/2116)  
-- [https://github.com/golang/go/issues/15442](https://github.com/golang/go/issues/15442)  
+还可参考:  
 
+- [https://gocn.vip/question/2116](https://gocn.vip/question/2116)
+- [https://github.com/golang/go/issues/15442](https://github.com/golang/go/issues/15442)  
 
 #### 5. [一篇好TM长的关于配置中心的文章](http://jm.taobao.org/2016/09/28/an-article-about-config-center/)  
 
-> 讲述了配置中心出现的必然, 论证了大型分布式系统是必须配置中心的, 并且配置中心需要有导入导出功能, 以及配置中心和注册中心的区别. 
-
-
+> 讲述了配置中心出现的必然, 论证了大型分布式系统是必须配置中心的, 并且配置中心需要有导入导出功能, 以及配置中心和注册中心的区别.
 
 #### 6. [如何实现靠谱的分布式锁？](https://mp.weixin.qq.com/s?__biz=MzIwMzg1ODcwMw==&mid=2247488347&idx=1&sn=057fb356decaf3cbf703d7ab600f8d3b&chksm=96c9a53ba1be2c2d7a530ef02bcd9eb1f1bef91c29473abecab8e568a065882961e6210d6307&mpshare=1&scene=1&srcid=0825XVuWFKkAvRpbtak3o8oV#rd)
 
 > 分布式锁，是用来控制分布式系统中互斥访问共享资源的一种手段，从而避免并行导致的结果不可控。基本的实现原理和单进程锁是一致的，通过一个共享标识来确定唯一性，对共享标识进行修改时能够保证原子性和和对锁服务调用方的可见性。由于分布式环境需要考虑各种异常因素，为实现一个靠谱的分布式锁服务引入了一定的复杂度。
 
-
-
 #### 7. [什么是缓存击穿](http://blog.jobbole.com/114012/)
 
 > 如果黑客每次故意查询一个在缓存内必然不存在的数据，导致每次请求都要去存储层去查询，这样缓存就失去了意义。如果在大流量下数据库可能挂掉。这就是缓存击穿。
-
-
 
 #### 8. [Dapper: 大规模分布式系统的跟踪系统](https://bigbully.github.io/Dapper-translation/)
 
@@ -111,7 +103,8 @@ func main() {
 >
 > 查找 sidechar 模式时发现的。。。我好像发现了新的世界。。。这其实是一本书。
 
-#### 14. [Haunt - Youzan 服务发现 概述](https://tech.youzan.com/haunt-youzan-service-discovery/)  
+#### 14. [Haunt - Youzan 服务发现 概述](https://tech.youzan.com/haunt-youzan-service-discovery/)
+
 > Haunt是有赞内部使用的服务发现系统，文中会详细介绍一下该系统的设计与思考  
 > PaaS平台中的应用一般都有多个实例，实例故障重启透明化与负载均衡都与服务发现密切相关。通过服务发现机制，可以透明的对多个实例进行访问，并实现负载均衡。而且应用的某个实例随时都可能故障重启，这时就需要动态配置服务调用方的路由信息。服务发现就可以解决这个动态配置的问题，Haunt(Youzan服务发现系统)也应运而生。
 
@@ -152,21 +145,28 @@ func main() {
 
 > 全链路监控从业务的视角出发，监控整个业务流程的健康状况，无需多个系统切换，直观看到全局和上下游，方便快速发现、定位问题。今天，我们一起来看看阿里基础设施技术团队在这方面的实践经验。
 
-## 二. 收集的仓库 
+#### 20. [10+倍性能提升全过程--优酷账号绑定淘宝账号的TPS从500到5400的优化历程](http://jm.taobao.org/2017/05/04/20170504/)
 
-####  1. [Go夜读群的总结分享](https://github.com/developer-learning/night-reading-go)    
+> 主要的问题和优化过程如下：
+> - docker bridge网络性能问题和网络中断si不均衡 （优化后：500->1000TPS)
+> - 短连接导致的local port不够 （优化后：1000-3000TPS）
+> - 生产环境snat单核导致的网络延时增大 （优化后能达到测试环境的3000TPS）
+> - Spring MVC Path带来的过高的CPU消耗 （优化后：3000->4200TPS)
+> - 其他业务代码的优化（比如异常、agent等） （优化后：4200->5400TPS)
+
+## 二. 收集的仓库
+
+####  1. [Go夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
 
 > 好多文章和仓库, 都是从这个群交流后收集的, 感谢分享, 感谢开源.
 
-
-#### 2. [系统设计技能树](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)    
+#### 2. [系统设计技能树](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
 
 > 系统设计相关, 感觉是架构师, 系统工程师必备的技能树
 
 #### 3. [Codis: Proxy based Redis cluster solution supporting pipeline and scaling dynamically](https://github.com/CodisLabs/codis)
 
 > Codis 是一个分布式 Redis 解决方案, 对于上层的应用来说, 连接到 Codis Proxy 和连接原生的 Redis Server 没有显著区别 (不支持的命令列表), 上层应用可以像使用单机的 Redis 一样使用, Codis 底层会处理请求的转发, 不停机的数据迁移等工作, 所有后边的一切事情, 对于前面的客户端来说是透明的, 可以简单的认为后边连接的是一个内存无限大的 Redis 服务。
-
 
 #### 4. [Pika: is a nosql compatible with redis, it is developed by Qihoo's DBA and infrastructure team](https://github.com/Qihoo360/pika)
 
@@ -175,7 +175,6 @@ func main() {
 #### 5. [Qconf: Qihoo Distributed Configuration Management System](https://github.com/Qihoo360/QConf)
 
 > QConf 是一个分布式配置管理工具。 用来替代传统的配置文件，使得配置信息和程序代码分离，同时配置变化能够实时同步到客户端，而且保证用户高效读取配置，这使的工程师从琐碎的配置修改、代码提交、配置上线流程中解放出来，极大地简化了配置管理工作。
-
 
 #### 6. [Beats - Lightweight shippers for Elasticsearch & Logstash](https://github.com/elastic/beats)
 
@@ -252,8 +251,6 @@ func main() {
 
 > Fast, concurrent, evicting in-memory cache written to keep big number of entries without impact on performance. BigCache keeps entries on heap but omits GC for them. To achieve that operations on bytes arrays take place, therefore entries (de)serialization in front of the cache will be needed in most use cases.
 
-
-
 ## 三. 收集的视频
 
 #### 1. [Go 夜读 goroutine 调度实现](https://www.youtube.com/watch?v=98pIzaOeD2k&t=5s)
@@ -274,16 +271,15 @@ func main() {
 
 #### 2. [Kibana Online Demo](https://demo.elastic.co/app/kibana)
 
-> 可以用来自己作图参考, 有些好看的图, 可以参考 demo 来做. 
+> 可以用来自己作图参考, 有些好看的图, 可以参考 demo 来做.
 
-##  五. 收集的博客站点
+## 五. 收集的博客站点
 
-#### 1. [CoolShell](http://coolshell.cn/)  
+#### 1. [CoolShell](http://coolshell.cn/)
 
 > 20年软件开发相关工作经验，10年以上项目和团队管理经验。擅长底层技术架构，团队建设，软件工程，软件研发咨询，以及全球软件团队协作管理。对高性能，高可用性，分布式，高并发，以及大规模数据处理系统有一些经验和心得。喜欢关注底层技术平台和互联网行业应用。技术擅长C/C++/Java和Unix/Linux/Windows。曾于Amazon中国任研发经理，负责电子商务全球化业务（全球开店）和全球库存预测系统的研发。曾在阿里巴巴北京研发中心、商家业务部曾任资深专家一职，负责电商云平台、开放平台，云监控和电商多媒体平台。曾在阿里巴巴核心系统专家组从事阿里核心系统和阿里云ECS相关的虚拟化平台的开发工作。现在创业中，MegaEase创始人，致力于为企业的高并发高可用架构提供一整套的技术解决方案和产品。
 
-
-#### 2. [阿里中间件团队博客](http://jm.taobao.org/) 
+#### 2. [阿里中间件团队博客](http://jm.taobao.org/)
 
 > 中间件团队致力于成为中国第一，世界一流的Java技术团队。自主研发的一系列产品始于07年底开始的淘宝架构2.0到3.0的变迁过程中，使淘宝网 从集中式的Java应用走向了分布式Java应用，涵盖了消息中间件、服务框架、数据层、应用服务器和大规模分布式稳定性平台等等。解决了淘宝网这个大型系统中的应用间以及应用到水平拆分后的数据库间的访问问题，通过消息中间件对应用进行了解耦并提供了最终一致性支持。目前广泛使用在大淘宝的各个Java应用中以及少部分的非Java应用中。而稳定性平台、性能优化平台是在淘宝系统分布式化后解决和稳定性、容量规划、降级管理、依赖告警以及性能丈量等方面的问题的利器。
 
@@ -295,7 +291,6 @@ func main() {
 #### 4. [小惡魔 – 電腦技術 – 工作筆記 – AppleBOY](https://blog.wu-boy.com/)
 
 > [https://blog.wu-boy.com/about/](https://blog.wu-boy.com/about/)
-
 
 ## 六. 收集的图片
 
