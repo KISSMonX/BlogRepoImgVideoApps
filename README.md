@@ -121,10 +121,9 @@ func main() {
 
 #### 16. [异步消息传递技术的比较：JMS、AMQP和MQTT](https://blog.csdn.net/happytofly/article/details/80123057)
 
-> 消息传递作为基本通信机制已经在全世界成功运用。无论是人与人、机器与人还是机器与机器之间，消息传递一直都是唯一常用的通信方式。在双方（或更多）之间交换消息有两种基本机制。    
+> 消息传递作为基本通信机制已经在全世界成功运用。无论是人与人、机器与人还是机器与机器之间，消息传递一直都是唯一常用的通信方式。在双方（或更多）之间交换消息有两种基本机制。  
 > - 同步消息传递  
 > - 异步消息传递  
-
 > 同步消息传递在这种情况下使用，当消息发送者希望在某个时间范围内收到响应，然后再进行下一个任务。基本上就是他在收到响应前一直处于“阻塞”状态。  
 > 异步消息意味着发送者并不要求立即收到响应，而且也不会阻塞整个流程。响应可有可无，发送者总会执行剩下的任务。   
 > 上面提到的技术，当两台计算机上的程序相互通信的时候，就广泛使用了异步消息传递。随着微服务架构的兴起，很明显我们需要使用异步消息传递模型来构建服务。
@@ -212,8 +211,7 @@ func main() {
 
 #### 9. [Colly: Elegant Scraper and Crawler Framework for Golang](https://github.com/gocolly/colly)
 
-> ## Features
->
+> Features:
 > - Clean API
 > - Fast (>1k request/sec on a single core)
 > - Manages request delays and maximum concurrency per domain
@@ -316,5 +314,11 @@ func main() {
 #### 3. TCP 三次握手, 四次挥手
 
 ![TCP握手挥手](./images/TCPShakeBye.jpg)
+
+---
+
+#### 5. 线程池的最优大小
+
+![线程池的最优大小](./images/threadPool.png)
 
 ---
