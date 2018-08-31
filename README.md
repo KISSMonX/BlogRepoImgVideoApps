@@ -222,6 +222,10 @@ func main() {
 
 > 一个集锦, 各种方案, 美滋滋
 
+#### 29. [分布式中"一致性"这个词的各项含义](https://www.zhihu.com/question/275845393)
+
+> 分布式事务的一致性，raft共识算法的一致性，一致性哈希的一致性，这些"一致性"的区别，以下回答会让你更加清楚。
+
 ## 二. 收集的仓库
 
 ####  1. [Go夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
