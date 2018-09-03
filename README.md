@@ -234,6 +234,20 @@ func main() {
 > 随着这些问题越来越突出，订单数据库的切分就愈发急迫了。
 > 这次切分，我们的目标是未来十年内不需要担心订单容量的问题。
 
+#### 31. [Google 云 API 设计手册](https://github.com/ch3rub1m/api-design-guide)
+
+> 这是一份针对网络API的通用设计指南。它从2014年开始用于Google内部，也用于设计Cloud APIs和Google APIs。
+> 这份指南在此处共享来告知外部开发者，以便我们所有人都能更轻松地合作。
+> Google Cloud Endpoints的开发者们可能会发现这份指南在设计gRPC APIs的时候特别有用，并且我们强烈推荐这些开发者们使用这些设计准则。
+> 但是我们并不强迫你使用它。你也可以使用Cloud Endpoints和gRPC却不遵循这份指南。
+> 这份指导可同时应用于基于HTTP的REST APIs与基于socket的RPC APIs，尤其是gRPC APIs。
+> gRPC APIs使用Protocol Buffers来定义它们的API接口，使用API Service Configuration来定义他们的API服务，包括HTTP映射，日志和监控。
+> HTTP映射这个特性被Google APIs和Cloud Endpoints gRPC APIs使用，用于JSON/HTTP和Protocol Buffers/RPC之间的转码。
+
+#### 32 [Kubernetes & Microservice](https://github.com/ch3rub1m/api-design-guide) 
+
+> 本质上，微服务的目的是想以一种架构模式，应对软件所服务的用户的规模增长。没有微服务架构之前，大多数应用是以单体模式出现的，只有当规模增长到一定程度，单体架构满足不了伸缩的需求的时候，才考虑拆分。而微服务的目标是在一开始的时候就按照这种架构实现，是一种面向未来的架构，也就是说用开始的选择成本降低以后的重构成本。用经济学的观点来说，微服务是技术投资，单体应用是技术债务，技术有余力那可以投资以期待未来收益，没余力那就只能借债支持当前业务，等待未来还债。而随着微服务基础设施的越来越完善，用很小的投资就可以获得未来很大的收益，就没有理由拒绝微服务了。
+
 ## 二. 收集的仓库
 
 ####  1. [Go夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
@@ -375,6 +389,10 @@ func main() {
 #### 4. [小惡魔 – 電腦技術 – 工作筆記 – AppleBOY](https://blog.wu-boy.com/)
 
 > [https://blog.wu-boy.com/about/](https://blog.wu-boy.com/about/)
+
+#### 5. [午夜咖啡](http://jolestar.com/)
+
+> 分享各种互联网架构方面的知识, 数据库容器化那篇文章感悟很多.
 
 ## 六. 收集的图片
 
