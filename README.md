@@ -474,3 +474,19 @@ func main() {
 ![线程池的最优大小](./images/threadPool.png)
 
 ---
+
+#### 6. 微服务和单体应用
+
+![单体和微服务](./images/MonolithMicroservices.jpeg)
+
+参考: [https://www.youtube.com/watch?v=fjYAU3jayVo](https://www.youtube.com/watch?v=fjYAU3jayVo)
+
+---
+
+#### 7. 并发的几种表现
+
+![并发](./images/Concurrency.png)
+
+参考: [https://www.youtube.com/watch?v=fjYAU3jayVo](https://www.youtube.com/watch?v=fjYAU3jayVo)
+
+---
