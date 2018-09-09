@@ -429,6 +429,8 @@ func main() {
 
 #### 5. [OpenShift Commons Briefing #82: Distributed Tracing with Jaeger & Prometheus on Kubernetes](https://www.youtube.com/watch?v=fjYAU3jayVo)
 
+#### 6. [OpenFass 介绍及源码分析](https://www.youtube.com/watch?v=bZtgrAVR9HQ)
+
 ## 四. 收集的工具软件
 
 #### 1. [Vertabelo](http://www.vertabelo.com/features)
