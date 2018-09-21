@@ -320,6 +320,13 @@ func main() {
 > 当微服务的运行质量低于某个临界值时，启动熔断机制，暂停微服务调用一段时间，以保障后端的微服务不会因为持续过负荷而宕机。
 > 本文作者介绍了熔断的原理和机制，并用例子说明了熔断如何使用。
 
+#### 40. [实时接口数据也能就近访问？细说如何用CDN提升App性能](https://mp.weixin.qq.com/s/O3wHbI1fT9_AlP7Aq_Juog)
+
+> 边缘计算是在靠近物或数据源头的一侧，就近提供计算服务。
+> 其应用程序在边缘侧发起，产生更快的网络服务响应，满足行业在实时业务、应用智能、安全与隐私保护等方面的基本需求。
+> 本文作者介绍了在CDN节点上做实时数据处理的一些方式，值得架构师学习。
+
+
 ## 二. 收集的仓库
 
 ####  1. [Go夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
@@ -422,6 +429,33 @@ func main() {
 > 服务端基于Spring Boot和Spring Cloud开发，打包后可以直接运行，不需要额外安装Tomcat等应用容器。  
 > Java客户端不依赖任何框架，能够运行于所有Java运行时环境，同时对Spring/Spring Boot环境也有较好的支持。  
 > .Net客户端不依赖任何框架，能够运行于所有.Net运行时环境。  
+
+#### 14. [Golang Monkey-Patch](https://github.com/bouk/monkey)
+
+> 参考: https://blog.keyboardman.me/2018/04/22/monkey-patch-in-go/ 
+
+```golang
+package main
+
+import (
+	"fmt"
+	"os"
+	"strings"
+
+	"bou.ke/monkey"
+)
+
+func main() {
+	monkey.Patch(fmt.Println, func(a ...interface{}) (n int, err error) {
+		s := make([]interface{}, len(a))
+		for i, v := range a {
+			s[i] = strings.Replace(fmt.Sprint(v), "hell", "*bleep*", -1)
+		}
+		return fmt.Fprintln(os.Stdout, s...)
+	})
+	fmt.Println("what the hell?") // what the *bleep*?
+}
+```
 
 ## 三. 收集的视频
 
