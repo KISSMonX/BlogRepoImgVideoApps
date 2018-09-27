@@ -326,6 +326,25 @@ func main() {
 > 其应用程序在边缘侧发起，产生更快的网络服务响应，满足行业在实时业务、应用智能、安全与隐私保护等方面的基本需求。
 > 本文作者介绍了在CDN节点上做实时数据处理的一些方式，值得架构师学习。
 
+#### 41. [高性能的消息框架 go-disruptor](https://colobu.com/2016/07/22/using-go-disruptor/)
+
+> Java程序员都知道，Disruptor是一个高性能的线程间通信的框架，即在同一个JVM进程中的多线程间消息传递,由LMAX开发。
+> Disruptor性能是如此之高，LMAX利用它可以处理每秒6百万订单，用1微秒的延迟获得吞吐量为100K+。那么Go语言生态圈中有没有这样的库呢？
+> go-disruptor就是对Java Disruptor的移植,它也提供了与Java Disruptor类似的API设计
+> 参考:
+> 1. [https://github.com/smartystreets/go-disruptor](https://github.com/smartystreets/go-disruptor)
+> 2. [https://github.com/LMAX-Exchange/disruptor](https://github.com/LMAX-Exchange/disruptor)
+
+#### 42. [为什么Disruptor会那么快?](https://colobu.com/2014/12/22/why-is-disruptor-faster-than-ArrayBlockingQueue/)
+
+> Disruptor是一个高性能的线程间消息传递的框架。
+> LMAX 目标是成为当世最快的商务平台。 为了实现这个目标，LMAX需要做一些特殊的工作在Java平台上取得低延迟和高吞吐率的目标。
+> 性能测试表明使用队列(queue)传递数据会带来延迟， 所以LAMX对这一块做了非常好的优化。
+
+#### 43. [使用Ring Buffer构建高性能的文件写入程序](https://cloud.tencent.com/developer/article/1045110)
+
+> 将多次写入操作合并成一次写入操作，并且采用异步写入方式。要保存多次操作的内容就要有一个类似“队列”的东西来保存，而一般的线程安全的队列，
+> 都是“有锁队列”，在性能要求很高的系统中，不希望在日志记录这个地方耗费多一点计算资源，所以最好有一个“无锁队列”，因此最佳方案就是Ring Buffer（环形缓冲区）了。
 
 ## 二. 收集的仓库
 
