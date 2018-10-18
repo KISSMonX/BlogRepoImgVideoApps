@@ -346,6 +346,77 @@ func main() {
 > 将多次写入操作合并成一次写入操作，并且采用异步写入方式。要保存多次操作的内容就要有一个类似“队列”的东西来保存，而一般的线程安全的队列，
 > 都是“有锁队列”，在性能要求很高的系统中，不希望在日志记录这个地方耗费多一点计算资源，所以最好有一个“无锁队列”，因此最佳方案就是Ring Buffer（环形缓冲区）了。
 
+#### 44. [记一次失败的docker排障经历](http://devopstarter.info/docker-daemon-debug-trip/)
+
+> Okay，闲话不多说，本文即是介绍鄙人最近（2017.06.03）对docker daemon无故hang住问题的一次排障经历。
+> 这一问题其实存在已久，因为没有足够的精力，对Docker也不够熟悉（其实还是惰性使然，这种排障投入产出比太低了，
+> 所以很多时候倾向于workaround），因此直到这回才真正深入挖掘了一下，当然，见于标题所述，其实这回也是一次失败的尝试 :(
+> 这些方法理论上来说应该是普遍适用的，strace、debug level log、dump、sourcode level debug
+
+#### 45. [5 simple ways to troubleshoot using Strace](http://hokstad.com/5-simple-ways-to-troubleshoot-using-strace)  
+
+> Strace is quite simply a tool that traces the execution of system calls. In its simplest form it can trace the execution of a binary from start to end, and output a line of text with the name of the system call, the arguments and the return value for every system call over the lifetime of the process. But it can do a lot more:
+> - It can filter based on the specific system call or groups of system calls
+> - It can profile the use of system calls by tallying up the number of times a specific system call is used, and the time taken, and the number of successes and errors.
+> - It traces signals sent to the process.
+> - It can attach to any running process by pid.
+
+#### 46. [Configure and troubleshoot the Docker daemon](https://docs.docker.com/config/daemon/)
+
+> After successfully installing and starting Docker, the dockerd daemon runs with its default configuration. This topic shows how to customize the configuration, start the daemon manually, and troubleshoot and debug the daemon if you run into issues.
+
+#### 47. [DHT 分布式哈希表](https://colobu.com/2018/03/26/distributed-hash-table/) 
+
+> [https://github.com/arriqaaq/chord](https://github.com/arriqaaq/chord)
+> 研究分布式哈希表的主要动机是为了开发点对点系统，像是Napster、Gnutella、BitTorrent及Freenet。
+> 这些系统使用分散在互联网上的各项资源以提供文件分享服务，特别在带宽及硬盘存储空间上受益良多。
+
+#### 48. [标准的 Golang 项目工程结构](https://github.com/golang-standards/project-layout)
+
+> This is a basic layout for Go application projects. It's not an official standard defined by the core Go dev team; however, it is a set of common historical and emerging project layout patterns in the Go ecosystem. Some of these patterns are more popular than others. It also has a number of small enhancements along with several supporting directories common to any large enough real world application.
+> [GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps](https://www.youtube.com/watch?v=oL6JBUk6tj0)
+
+#### 49. [Diving Deep Into The Golang Channels.](https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8)
+
+> .........
+
+#### 50. [分布式哈希与一致性哈希](https://www.jianshu.com/p/7beeb52376cc)
+
+> consistent hashing 是一种 hash 算法，简单的说，在移除 / 添加一个 cache 时，它能够尽可能小的改变已存在 key 映射关系。
+
+#### 51. [Graceful upgrades in Go](https://blog.cloudflare.com/graceful-upgrades-in-go/)
+
+> The idea behind graceful upgrades is to swap out the configuration and code of a process while it is running, without anyone noticing it.
+> If this sounds error prone, dangerous, undesirable and in general a bad idea – I’m with you.
+> However, sometimes you really need them. Usually this happens in an environment where there is no load balancing layer.
+> We have these at Cloudflare, which led to us investigating and implementing various solutions to this problem.
+
+#### 52. [Doing Well by Doing Bad: Writing Bad Code with Go](https://medium.com/capital-one-tech/doing-well-by-doing-bad-writing-bad-code-with-go-part-1-2dbb96ce079a)
+
+> [Doing Well by Doing Bad: Writing Bad Code with Go Part 2](https://medium.com/capital-one-tech/doing-well-by-doing-bad-writing-bad-code-with-go-part-2-e270d305c9f7)
+> As a quick review, the evil Go tricks we covered include:
+> - Poorly named and organized packages.
+> - Incorrectly organized interfaces.
+> - Passing pointers to variables into functions to populate their values.
+> - Using panics instead of errors.
+> - Using init functions and blank imports to set up dependencies.
+> - Loading configuration files using init functions.
+> - Using frameworks instead of libraries.
+
+#### 53. [层级时间轮的 Golang 实现](http://russellluo.com/2018/10/golang-implementation-of-hierarchical-timing-wheels.html)
+
+> 源码: [https://github.com/RussellLuo/timingwheel](https://github.com/RussellLuo/timingwheel)
+>
+> 其实在软件系统中，“在一段时间后执行一个任务” 的需求比比皆是。比如：
+> - 客户端发起 HTTP 请求后，如果在指定时间内没有收到服务器的响应，则自动断开连接。
+>
+> 为了实现上述功能，通常我们会使用定时器 Timer：
+> - 客户端发起请求后，立即创建（启动）一个 Timer：到期间隔为 d，到期后执行 “断开连接” 的操作。
+> - 如果到期间隔 d 以内收到了服务器的响应，客户端就删除（停止）这个 Timer。
+> - 如果一直没有收到响应，则 Timer 最终会到期，然后执行 “断开连接” 的操作。
+>
+> Golang 内置的 Timer 是采用最小堆来实现的，创建和删除的时间复杂度都为 O(log n)。现代的 Web 服务动辄管理 10w+ 甚至 100w+ 的连接，每个连接都会有很多超时任务（比如发送超时、心跳检测等），如果每个超时任务都对应一个 Timer，性能会十分低下。
+
 ## 二. 收集的仓库
 
 ####  1. [Go夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
@@ -475,6 +546,24 @@ func main() {
 	fmt.Println("what the hell?") // what the *bleep*?
 }
 ```
+
+#### 15. [The Illustrated TLS Connection](https://tls.ulfheim.net/)
+
+> In this demonstration a client has connected to a server, negotiated a TLS 1.2 session, sent "ping", received "pong", and then terminated the session. Click below to begin exploring.
+
+#### 16. [A Production-Grade Reliable-UDP Library for golang](https://github.com/xtaci/kcp-go)
+
+> kcp-go is a Production-Grade Reliable-UDP library for golang.
+> This library intents to provide a smooth, resilient, ordered, error-checked and anonymous delivery of streams over UDP packets, 
+> it has been battle-tested with opensource project kcptun. Millions of devices(from low-end MIPS routers to high-end servers) 
+> have deployed kcp-go powered program in a variety of forms like online games, live broadcasting, file synchronization and network acceleration.
+
+#### 17. [KCP - A Fast and Reliable ARQ Protocol](https://github.com/skywind3000/kcp)
+
+> KCP是一个快速可靠协议，能以比 TCP浪费10%-20%的带宽的代价，换取平均延迟降低 30%-40%，且最大延迟降低三倍的传输效果。
+> 纯算法实现，并不负责底层协议（如UDP）的收发，需要使用者自己定义下层数据包的发送方式，以 callback的方式提供给 KCP。 连时钟都需要外部传递进来，内部不会有任何一次系统调用。
+> 整个协议只有 ikcp.h, ikcp.c两个源文件，可以方便的集成到用户自己的协议栈中。也许你实现了一个P2P，或者某个基于 UDP的协议，
+> 而缺乏一套完善的ARQ可靠协议实现，那么简单的拷贝这两个文件到现有项目中，稍微编写两行代码，即可使用。
 
 ## 三. 收集的视频
 
