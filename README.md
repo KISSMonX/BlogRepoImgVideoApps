@@ -702,4 +702,10 @@ func main() {
 
 ![HTTP Status](./images/httpstatusmap.png)
 
-参考; [https://restlet.com/http-status-map/](https://restlet.com/http-status-map/)
+参考: [https://restlet.com/http-status-map/](https://restlet.com/http-status-map/)
+
+#### 9. Git CheatSheet
+
+![Git Cheatsheet](./images/gitcheatsheet.png)
+
+参考: [http://ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;](http://ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;)
