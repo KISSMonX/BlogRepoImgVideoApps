@@ -622,6 +622,21 @@ func main() {
 > 整个协议只有 ikcp.h, ikcp.c 两个源文件，可以方便的集成到用户自己的协议栈中。也许你实现了一个 P2P，或者某个基于 UDP 的协议，
 > 而缺乏一套完善的 ARQ 可靠协议实现，那么简单的拷贝这两个文件到现有项目中，稍微编写两行代码，即可使用。
 
+#### 18. [einx: A framework in golang for game server or app server](https://github.com/Cyinx/einx)
+
+> einx 是一个由 golang 编写的用于游戏服务器或者应用服务器的开源框架。
+> 设计核心：
+> - 模块与组件的组合机制,模块是逻辑核心。
+> - lua脚本
+> - 按业务分离逻辑
+> - einx/db 组件化数据库相关操作
+> - einx/network 组件化网络IO，目前只支持TCP
+> - einx/log 异步日志库
+> - einx/timer 时间轮定时器
+> - einx/module 模块
+> - einx/component 组件
+> - einx/lua 脚本相关操作
+
 ## 三. 收集的视频
 
 #### 1. [Go 夜读 goroutine 调度实现](https://www.youtube.com/watch?v=98pIzaOeD2k&t=5s)
