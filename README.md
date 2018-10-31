@@ -749,3 +749,7 @@ func main() {
 ![Git Cheatsheet](./images/gitcheatsheet.png)
 
 参考: [http://ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;](http://ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;)
+
+#### 10. 68–95–99.7原则
+
+![68–95–99.7原则](./images/Empirical_rule.PNG)
