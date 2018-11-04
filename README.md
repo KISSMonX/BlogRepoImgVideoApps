@@ -473,6 +473,10 @@ func main() {
 > 换句话说，我了解的东西只能算是一些原则，甚至也有一些“陈旧”了——不过我想既然是一些原则性的东西，还是能够用它来做一定程度的判断。至少我认为，
 > 我在博客园里看到的许多关于“汇编优化”也好，“内嵌汇编”也罢的说法，经常是有些问题的。
 
+#### 61. [MySQL 执行计划解读](https://mp.weixin.qq.com/s?__biz=MzUwOTk3MTMxMg==&mid=2247484054&idx=1&sn=cb86fadcab4c6bf6a7ef6635a102272d)
+
+> 本文是阿里架构师 @胡中泉 关于 MySQL 执行计划的详细解读，PPT 中针对各个参数都配上了具体例子进行解释，让人十分容易理解。
+
 ## 二. 收集的仓库
 
 #### 1. [Go 夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
@@ -626,11 +630,12 @@ func main() {
 
 > einx 是一个由 golang 编写的用于游戏服务器或者应用服务器的开源框架。
 > 设计核心：
+>
 > - 模块与组件的组合机制,模块是逻辑核心。
-> - lua脚本
+> - lua 脚本
 > - 按业务分离逻辑
 > - einx/db 组件化数据库相关操作
-> - einx/network 组件化网络IO，目前只支持TCP
+> - einx/network 组件化网络 IO，目前只支持 TCP
 > - einx/log 异步日志库
 > - einx/timer 时间轮定时器
 > - einx/module 模块
@@ -750,6 +755,6 @@ func main() {
 
 参考: [http://ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;](http://ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;)
 
-#### 10. 68–95–99.7原则
+#### 10. 68–95–99.7 原则
 
 ![68–95–99.7原则](./images/Empirical_rule.PNG)
