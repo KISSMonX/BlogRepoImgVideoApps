@@ -477,6 +477,17 @@ func main() {
 
 > 本文是阿里架构师 @胡中泉 关于 MySQL 执行计划的详细解读，PPT 中针对各个参数都配上了具体例子进行解释，让人十分容易理解。
 
+#### 63. [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
+
+> My goal over the next two sessions is to give you my advice for best practices writing Go code.
+> This is a workshop style presentation, I’m going to dispense with the usual slide deck and we’ll work
+> directly from the document which you can take away with you today.
+
+#### 64. [Go 语言实战: 编写可维护 Go 语言代码建议](https://github.com/llitfkitfk/go-best-practice)
+
+> 大家好, 我在接下来的两个会议中的目标是向大家提供有关编写 Go 代码最佳实践的建议。
+> 这是一个研讨会形式的演讲，不会有幻灯片,而是直接从文档开始。
+
 ## 二. 收集的仓库
 
 #### 1. [Go 夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
