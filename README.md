@@ -769,3 +769,7 @@ func main() {
 #### 10. 68–95–99.7 原则
 
 ![68–95–99.7原则](./images/Empirical_rule.PNG)
+
+#### 11. Golang Net/Http Flow
+
+![golang_http](./images/golang_http_flow.jpg)
