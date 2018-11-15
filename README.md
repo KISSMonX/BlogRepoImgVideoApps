@@ -486,7 +486,17 @@ func main() {
 #### 64. [Go 语言实战: 编写可维护 Go 语言代码建议](https://github.com/llitfkitfk/go-best-practice)
 
 > 大家好, 我在接下来的两个会议中的目标是向大家提供有关编写 Go 代码最佳实践的建议。
-> 这是一个研讨会形式的演讲，不会有幻灯片,而是直接从文档开始。
+> 这是一个研讨会形式的演讲，不会有幻灯片,而是直接从文档开始。 
+
+#### 65. [mgo 的 session 与连接池使用](https://cardinfolink.github.io/2017/05/17/mgo-session/)
+
+> mgo是由Golang编写的开源mongodb驱动。由于mongodb官方并没有开发Golang驱动，因此这款驱动被广泛使用。
+> mongodb官网也推荐了这款开源驱动，并且作者在github也表示受到了mongodb官方的赞助。但由于作者的个人安排原因，该驱动的更新、bug修复、issue维护略微受到诟病。
+> mgo在功能方面还是比较完善的，api使用也方便。由于mongodb丰富的玩法，mgo代码庞大，其中大部分是与mongodb的协议代码。核心的处理连接和请求的结构，逻辑上还是比较清晰的。
+>
+> 这里是 mgo 官方库的 fork, 继续维护并解决了很多 bug: [https://github.com/globalsign/mgo](https://github.com/globalsign/mgo)
+> This fork has had a few improvements by ourselves as well as several PR's merged from the original mgo repo that are currently awaiting review. 
+> Changes are mostly geared towards performance improvements and bug fixes, though a few new features have been added.
 
 ## 二. 收集的仓库
 
