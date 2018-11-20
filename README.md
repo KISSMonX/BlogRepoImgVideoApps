@@ -498,6 +498,41 @@ func main() {
 > This fork has had a few improvements by ourselves as well as several PR's merged from the original mgo repo that are currently awaiting review. 
 > Changes are mostly geared towards performance improvements and bug fixes, though a few new features have been added.
 
+#### 66. [Go Python 对比着学, 看看互相怎么实现的](http://govspy.peterbe.com/)
+
+> Learning Go by comparing how you'd do it in Python
+> Table of Contents
+> - Hello World
+> - Print
+> - Comments
+> - Multiline Strings
+> - Lists
+> - Maps
+> - Booleans
+> - Forloop
+> - Range
+> - Switch
+> - Variadic Functions
+> - Time Elapsed
+> - Closure Functions
+> - Defer
+> - Panic Recover
+> - Mutables
+> - Structs
+> - Methods
+> - Goroutines
+> - Markdownserver
+> - ORM (Object Relational Mapper)
+> - Args
+> - Import Alias
+> - Sprintf
+> - Uniqify
+> - Dotdict
+
+#### 67. [How To Write Unmaintainable Code](https://github.com/Droogans/unmaintainable-code)
+
+> You don't want to overdo this. Your code should not look hopelessly unmaintainable, just be that way. Otherwise it stands the risk of being rewritten or refactored.
+
 ## 二. 收集的仓库
 
 #### 1. [Go 夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
