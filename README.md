@@ -533,6 +533,10 @@ func main() {
 
 > You don't want to overdo this. Your code should not look hopelessly unmaintainable, just be that way. Otherwise it stands the risk of being rewritten or refactored.
 
+#### 68. [阿里Redis规范](https://zhuanlan.zhihu.com/p/34570023)
+
+> 本文介绍了在使用阿里云Redis的开发规范，从键值设计、命令使用、客户端使用、相关工具等方面进行说明，通过本文的介绍可以减少使用Redis过程带来的问题。
+
 ## 二. 收集的仓库
 
 #### 1. [Go 夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
