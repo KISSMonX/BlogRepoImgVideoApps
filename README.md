@@ -537,6 +537,17 @@ func main() {
 
 > 本文介绍了在使用阿里云Redis的开发规范，从键值设计、命令使用、客户端使用、相关工具等方面进行说明，通过本文的介绍可以减少使用Redis过程带来的问题。
 
+#### 69. [Building real-time messaging server in Go](https://medium.com/@fzambia/building-real-time-messaging-server-in-go-5661c0a45248)
+
+> So what is a real-time messaging? When I say real-time message I mean message you deliver to your application clients as reaction to some event happened in your application.
+> The important property of such message is that it’s delivered to client almost immediately — in milliseconds after being sent by backend.
+> This kind of messages is very useful in practice for multiplayer games, chat rooms, dynamic counters, live charts and so on.
+
+#### 70. [布隆过滤器原理,实现与优化](http://oserror.com/backend/bloomfilter/)
+
+> 空间效率高的概率型数据结构，用来检查一个元素是否在一个集合中
+> 对于一个元素检测是否存在的调用，BloomFilter会告诉调用者两个结果之一：可能存在或者一定不存在
+
 ## 二. 收集的仓库
 
 #### 1. [Go 夜读群的总结分享](https://github.com/developer-learning/night-reading-go)
