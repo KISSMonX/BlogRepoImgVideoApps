@@ -532,7 +532,13 @@ func main() {
 
 #### 67. [How To Write Unmaintainable Code](https://github.com/Droogans/unmaintainable-code)
 
-> You don't want to overdo this. Your code should not look hopelessly unmaintainable, just be that way. Otherwise it stands the risk of being rewritten or refactored.
+> You don't want to overdo this. Your code should not look hopelessly unmaintainable, just be that way. Otherwise it stands the risk of being rewritten or refactored.  
+  
+
+#### 68. [Quic协议介绍和浅析](https://blog.csdn.net/jeffrey11223/article/details/84382123)
+
+> Quic全称？Quic的优势和应用场景？为什么需要Quic？
+> Quic协议原理。0RTT 建连怎么做到的？Quic和http3的关系？参考资料 
 
 #### 68. [阿里Redis规范](https://zhuanlan.zhihu.com/p/34570023)
 
