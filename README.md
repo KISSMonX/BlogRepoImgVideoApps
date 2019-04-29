@@ -720,6 +720,25 @@ func main() {
 > - einx/component 组件
 > - einx/lua 脚本相关操作
 
+#### 19. [一个不错的大佬分享 PPT 分享集合](https://github.com/rfyiamcool/share_ppt)
+
+> - Redis Cluster那些事儿
+> - golang高级讲义
+> - golang高性能实战
+> - mysql快速讲义
+> - redis高级讲义
+> - 微服务那些事儿
+> - 异步io调度框架的实现
+> - cdn设计原理
+> - 分析mysql acid设计实现
+> - Python gil那些事儿
+> - Redis设计实现
+> - 分布式一致性raft实现原理
+> - Python高级内存管理
+> - 美妙的多进程管理
+> - 聊聊集群管理
+> - 更新中 ...
+
 ## 三. 收集的视频
 
 #### 1. [Go 夜读 goroutine 调度实现](https://www.youtube.com/watch?v=98pIzaOeD2k&t=5s)
