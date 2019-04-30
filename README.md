@@ -552,8 +552,14 @@ func main() {
 
 #### 70. [布隆过滤器原理,实现与优化](http://oserror.com/backend/bloomfilter/)
 
-> 空间效率高的概率型数据结构，用来检查一个元素是否在一个集合中
+> 空间效率高的概率型数据结构，用来检查一个元素是否在一个集合中  
 > 对于一个元素检测是否存在的调用，BloomFilter会告诉调用者两个结果之一：可能存在或者一定不存在
+
+#### 71. [High Performance Go Workshop](https://dave.cheney.net/high-performance-go-workshop/gopherchina-2019.html#lets_look_at_the_data)
+
+> The goal for this workshop is to give you the tools you need to diagnose performance problems in your Go applications and fix them.  
+> PPT 地址:  
+![PPT地址](http://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=https%3A%2F%2Fdave.cheney.net%2Fhigh-performance-go-workshop%2Fgopherchina-2019.html&qzone=1&margin=0&size=400x400&ecc=L)
 
 ## 二. 收集的仓库
 
