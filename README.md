@@ -1,5 +1,5 @@
 > **注: 如果文章打不开, 可以发 Issues 或者自行 Google 搜索找到新的文章地址, 发 PR. 提前感谢.**
-> 欢迎关注 Telegram Channel: [这个屌:https://t.me/thisj8](https://t.me/thisj8), 这里会经常发布有意义的文章, 图片, 连接, repo之类的
+> 欢迎关注 Telegram Channel: [这个屌:https://t.me/JBthings](https://t.me/JBthings), 这里会经常发布有意义的文章, 图片, 连接, repo之类的
 
 ## 一. 收集的文章
 
